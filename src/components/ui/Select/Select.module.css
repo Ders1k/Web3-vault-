@@ -1,0 +1,30 @@
+.select {
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 7px 20px;
+  background-image: url('../../../assets/select-down-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  width: 100%;
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  border-color: hsl(var(--text-clr));
+  color: hsl(var(--text-clr));
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-bold);
+  height: 50px;
+  outline: 0;
+}
+
+.select:focus {
+  background-image: url('../../../assets/select-up-arrow.svg');
+}
+
+.select > option {
+  background-color: hsl(var(--primary-clr));
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-normal);
+}
+

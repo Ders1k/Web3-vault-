@@ -1,0 +1,36 @@
+.input__label {
+  color: hsl(var(--text-clr));
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-normal);
+  text-transform: capitalize;
+}
+
+.input {
+  background-color: transparent;
+  border: 0;
+  height: 28px;
+  color: hsl(0, 0%, 90%);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-large);
+  outline: 0;
+  padding-left: 0;
+}
+
+.input::placeholder {
+  color: hsl(var(--secondary-clr));
+  transition: color 0.4s;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.input:focus::placeholder {
+  color: hsl(var(--accent-clr), 0.6);
+}

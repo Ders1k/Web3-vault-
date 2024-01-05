@@ -1,0 +1,17 @@
+.deposits__id {
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  margin: 0;
+  padding-block: 16px;
+}
+
+@media (hover: hover) {
+  .deposits__id:hover {
+    background-color: hsl(var(--accent-clr), 0.2);
+  }
+}
+
+.deposits__id:active {
+  background-color: hsl(var(--accent-clr), 0.1);
+}

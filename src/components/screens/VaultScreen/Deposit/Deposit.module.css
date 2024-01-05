@@ -1,0 +1,24 @@
+.deposit {
+  height: 100%;
+}
+
+.deposit__form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.deposit__input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.deposit__input__container > input:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.deposit__buttons__container {
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,40 @@
+.vault__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.vault__container {
+  display: flex;
+  justify-content: center;
+}
+
+.vault__content {
+  box-sizing: border-box;
+  width: 520px;
+  min-height: 300px;
+  background-color: hsl(var(--primary-clr));
+  border-radius: 0 18px 18px 0;
+  padding: 30px 25px;
+  border-block: var(--border);
+  border-right: var(--border);
+}
+
+.vault__buttons__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.vault__button span {
+  color: hsl(var(--accent-clr));
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-medium);
+  writing-mode: vertical-rl;
+  scale: -1;
+}
+
+.vault__active__button {
+  border-right: var(--border);
+  background-color: hsla(235, 24%, 17%, 1);
+}

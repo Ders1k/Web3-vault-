@@ -1,0 +1,31 @@
+.wallet__button {
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  color: hsl(var(--text-clr));
+  border: var(--border);
+  background-color: hsl(var(--primary-clr));
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  height: 50px;
+  transition: background-color 0.1s;
+}
+
+.wallet__button__text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (hover: hover) {
+  .wallet__button:hover {
+    background-color: hsl(var(--primary-clr), 0.8);
+  }
+}
+
+.wallet__button:active {
+  background-color: hsl(var(--primary-clr), 0.6);
+}

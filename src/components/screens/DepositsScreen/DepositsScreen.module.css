@@ -1,0 +1,26 @@
+.deposits__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.deposits__container {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  background-color: hsl(var(--primary-clr));
+  padding: 30px 25px;
+  border: var(--border);
+  border-radius: 18px;
+}
+
+.dividing__stroke {
+  border-top: 1px solid hsl(235, 41%, 63%, 0.3);
+}
+
+.deposits__amount {
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-medium);
+}

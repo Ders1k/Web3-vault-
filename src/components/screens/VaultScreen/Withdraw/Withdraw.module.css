@@ -1,0 +1,38 @@
+.withdraw {
+  height: 100%;
+}
+
+.withdraw__form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.withdraw__input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.withdraw__input__container input:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.dividing__stroke {
+  position: relative;
+  border-top: 1px dashed hsl(235, 41%, 63%, 0.3);
+}
+
+.dividing__stroke::after {
+  position: absolute;
+  content: 'OR';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-bold);
+}
+
+.withdraw__form > p {
+  margin: 0;
+}
