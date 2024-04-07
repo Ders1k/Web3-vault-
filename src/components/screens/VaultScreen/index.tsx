@@ -12,7 +12,7 @@ const VaultScreen = () => {
   const [activePage, setActivePage] = useState('deposit');
 
   const sections: ISections = { deposit: <Deposit />, withdraw: <Withdraw /> };
-
+  
   const handleChangePage = (page: string) => {
     return () => {
       setActivePage(page);

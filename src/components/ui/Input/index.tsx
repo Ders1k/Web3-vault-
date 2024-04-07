@@ -1,9 +1,9 @@
-import { InputHTMLAttributes } from 'react';
+import { ComponentProps } from 'react';
 import styles from './Input.module.css';
 
 interface IInputProps
   extends Pick<
-    InputHTMLAttributes<HTMLInputElement>,
+    ComponentProps<'input'>,
     | 'type'
     | 'value'
     | 'required'

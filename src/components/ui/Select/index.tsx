@@ -1,9 +1,9 @@
-import { SelectHTMLAttributes, useRef } from 'react';
+import { ComponentProps, useRef } from 'react';
 import styles from './Select.module.css';
 
 interface ISelectProps
   extends Pick<
-    SelectHTMLAttributes<HTMLSelectElement>,
+    ComponentProps<'select'>,
     'value' | 'onChange' | 'required' | 'name' | 'id'
   > {
   label?: string;

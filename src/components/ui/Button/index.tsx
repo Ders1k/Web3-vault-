@@ -1,13 +1,13 @@
-import { ButtonHTMLAttributes } from 'react';
+import { ComponentProps } from 'react';
 import styles from './Button.module.css';
 
 interface IButtonProps
   extends Pick<
-    ButtonHTMLAttributes<HTMLButtonElement>,
+    ComponentProps<'button'>,
     'title' | 'type' | 'onClick' | 'children' | 'disabled'
   > {}
 
-const Button = ({ children, type, title, disabled,onClick}: IButtonProps) => {
+const Button = ({ children, type, title, disabled, onClick }: IButtonProps) => {
   return (
     <button
       className={styles.button}
